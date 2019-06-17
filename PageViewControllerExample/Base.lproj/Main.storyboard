@@ -1,24 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lM0-yt-1yr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="Vt2-ps-Fgx">
+            <objects>
+                <viewController storyboardIdentifier="vcOne" id="YbA-8H-VG2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fG9-4O-GIy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="JJ3-Wm-5Po">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G1-hB-1Nv">
+                                <rect key="frame" x="0.0" y="692" width="414" height="170"/>
+                                <mutableString key="text">The Cambridge Animal Commission facilitates programs for animal control and welfare in the city and maintains Cambridge as a safe environment for people, pets and other animals, through an educational and enforcement approach. The Commission encourages responsible pet ownership and ensures public safety around domestic or wild animals. The Animal Commission's regular duties include: rescuing injured and/or sick domestic pets and wildlife; enforcement of state laws and City ordinances pertaining to animals; and licensing of all dogs in the City of Cambridge.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JJ3-Wm-5Po" firstAttribute="height" secondItem="fG9-4O-GIy" secondAttribute="height" multiplier="1/2" id="0Z8-Qg-T7d"/>
+                            <constraint firstItem="DQG-uk-8VM" firstAttribute="trailing" secondItem="7G1-hB-1Nv" secondAttribute="trailing" id="5Rm-zn-DyU"/>
+                            <constraint firstItem="7G1-hB-1Nv" firstAttribute="leading" secondItem="DQG-uk-8VM" secondAttribute="leading" id="JLf-KS-cGU"/>
+                            <constraint firstItem="JJ3-Wm-5Po" firstAttribute="width" secondItem="fG9-4O-GIy" secondAttribute="width" id="ROL-qi-nw9"/>
+                            <constraint firstItem="DQG-uk-8VM" firstAttribute="bottom" secondItem="7G1-hB-1Nv" secondAttribute="bottom" id="Rfn-Zs-AO0"/>
+                            <constraint firstItem="JJ3-Wm-5Po" firstAttribute="centerX" secondItem="fG9-4O-GIy" secondAttribute="centerX" id="XQY-eZ-kmh"/>
+                            <constraint firstItem="7G1-hB-1Nv" firstAttribute="top" secondItem="JJ3-Wm-5Po" secondAttribute="bottom" constant="20" id="ce3-iG-frS"/>
+                            <constraint firstItem="JJ3-Wm-5Po" firstAttribute="centerY" secondItem="fG9-4O-GIy" secondAttribute="centerY" id="rJI-dr-sRU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DQG-uk-8VM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5fG-3j-ddW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1775.3623188405797" y="797.54464285714278"/>
+        </scene>
+        <!--Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PageViewController" customModule="PageViewControllerExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mmo-Em-nqw">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="niC-TD-5N0">
+                            <connections>
+                                <action selector="deleteAction:" destination="BYZ-38-t0r" id="cpt-ba-a21"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-417" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7wF-sf-ftd">
+            <objects>
+                <viewController storyboardIdentifier="vcTwo" id="Bfz-Ps-AUb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vaj-Qb-mPb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chicken" translatesAutoresizingMaskIntoConstraints="NO" id="GUv-vj-dim">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-b9-Opt">
+                                <rect key="frame" x="0.0" y="692" width="414" height="170"/>
+                                <string key="text">Documentary following young animals as they take their first steps and face their earliest challenges.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GUv-vj-dim" firstAttribute="centerX" secondItem="Vaj-Qb-mPb" secondAttribute="centerX" id="C9M-gD-sP3"/>
+                            <constraint firstItem="jL6-b9-Opt" firstAttribute="top" secondItem="GUv-vj-dim" secondAttribute="bottom" constant="20" id="D7O-KR-EFI"/>
+                            <constraint firstItem="GUv-vj-dim" firstAttribute="height" secondItem="Vaj-Qb-mPb" secondAttribute="height" multiplier="1/2" id="WOR-qY-GPA"/>
+                            <constraint firstItem="GUv-vj-dim" firstAttribute="centerY" secondItem="Vaj-Qb-mPb" secondAttribute="centerY" id="fOc-HV-P3I"/>
+                            <constraint firstItem="GUv-vj-dim" firstAttribute="width" secondItem="Vaj-Qb-mPb" secondAttribute="width" id="jEP-mb-yON"/>
+                            <constraint firstItem="jL6-b9-Opt" firstAttribute="bottom" secondItem="35Q-iD-vLk" secondAttribute="bottom" id="tPd-dZ-F5z"/>
+                            <constraint firstItem="jL6-b9-Opt" firstAttribute="leading" secondItem="35Q-iD-vLk" secondAttribute="leading" id="wk8-F0-NBD"/>
+                            <constraint firstItem="jL6-b9-Opt" firstAttribute="trailing" secondItem="35Q-iD-vLk" secondAttribute="trailing" id="xhy-8u-6Gn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="35Q-iD-vLk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1q-D7-PGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-972.46376811594212" y="797.54464285714278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5UU-pW-y7n">
+            <objects>
+                <viewController storyboardIdentifier="vcThree" id="Yv6-YO-g2u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="do2-eI-Jv8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="ena-nh-v7H">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pC5-0z-1uC">
+                                <rect key="frame" x="0.0" y="692" width="414" height="170"/>
+                                <mutableString key="text">Họ Voi (danh pháp khoa học: Elephantidae) là một họ các động vật da dày, và là họ duy nhất còn tồn tại thuộc về bộ có vòi (hay bộ mũi dài, danh pháp khoa học: Proboscidea). Họ Voi hiện có ba loài còn tồn tại là: voi đồng cỏ châu Phi và voi rừng châu Phi (có thể được hiểu chung là voi châu Phi) và voi châu Á (ngày trước được hiểu như là voi Ấn Độ). Chúng phân bố ở châu Phi, Ấn Độ và vùng Tây Nam Á. Có một loài nữa là voi ma mút (là loài động vật trên cạn lớn nhất thế giới) cũng được biết đến nhưng đã bị tuyệt chủng ở thời kỳ băng hà cách đây chừng 10.000 năm.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pC5-0z-1uC" firstAttribute="leading" secondItem="do2-eI-Jv8" secondAttribute="leading" id="5BI-El-5Gg"/>
+                            <constraint firstItem="pC5-0z-1uC" firstAttribute="top" secondItem="ena-nh-v7H" secondAttribute="bottom" constant="20" id="CJ3-lM-dJg"/>
+                            <constraint firstItem="ena-nh-v7H" firstAttribute="centerY" secondItem="do2-eI-Jv8" secondAttribute="centerY" id="H2R-9c-uYW"/>
+                            <constraint firstItem="ena-nh-v7H" firstAttribute="width" secondItem="do2-eI-Jv8" secondAttribute="width" id="RHY-PG-4km"/>
+                            <constraint firstItem="ena-nh-v7H" firstAttribute="centerX" secondItem="do2-eI-Jv8" secondAttribute="centerX" id="T3o-9L-NeG"/>
+                            <constraint firstItem="DaW-Pp-cb4" firstAttribute="bottom" secondItem="pC5-0z-1uC" secondAttribute="bottom" id="bUo-an-vI8"/>
+                            <constraint firstItem="DaW-Pp-cb4" firstAttribute="trailing" secondItem="pC5-0z-1uC" secondAttribute="trailing" id="nXW-gj-iHm"/>
+                            <constraint firstItem="ena-nh-v7H" firstAttribute="height" secondItem="do2-eI-Jv8" secondAttribute="height" multiplier="1/2" id="rtZ-mh-p5Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DaW-Pp-cb4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKE-a2-1yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="798"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ntp-zQ-E3J">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lM0-yt-1yr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3a6-wN-dDR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tln-O9-raH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLN-mh-cOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1532" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eSO-12-jjv">
+            <objects>
+                <viewController storyboardIdentifier="vcFour" id="lMG-nQ-cgS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lgV-wb-kt4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-7o-60T">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip5-hl-Vsq">
+                                <rect key="frame" x="0.0" y="692" width="414" height="170"/>
+                                <mutableString key="text">Gà hay gà nhà, kê (danh pháp hai phần: Gallus gallus, Gallus gallus domesticus) là một loài chim đã được con người thuần hoá cách đây hàng nghìn năm. Một số ý kiến cho rằng loài này có thuỷ tổ từ loài chim hoang dã ở Ấn Độ và loài gà rừng lông đỏ nhiệt đới ở vùng Đông Nam Á. Trong thế giới loài chim, gà là loài vật có số lượng áp đảo nhất với 24 tỉ cá thể (thống kê đến năm 2003)</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="arQ-Os-ahk" firstAttribute="bottom" secondItem="ip5-hl-Vsq" secondAttribute="bottom" id="1Xq-uN-wYd"/>
+                            <constraint firstItem="ip5-hl-Vsq" firstAttribute="top" secondItem="5VV-7o-60T" secondAttribute="bottom" constant="20" id="Sev-Wb-kC3"/>
+                            <constraint firstItem="5VV-7o-60T" firstAttribute="height" secondItem="lgV-wb-kt4" secondAttribute="height" multiplier="1/2" id="YXR-3F-h4O"/>
+                            <constraint firstItem="arQ-Os-ahk" firstAttribute="trailing" secondItem="ip5-hl-Vsq" secondAttribute="trailing" id="aIt-UU-LAR"/>
+                            <constraint firstItem="5VV-7o-60T" firstAttribute="width" secondItem="lgV-wb-kt4" secondAttribute="width" id="hj2-bw-gxi"/>
+                            <constraint firstItem="ip5-hl-Vsq" firstAttribute="top" secondItem="5VV-7o-60T" secondAttribute="bottom" constant="20" id="kI7-LJ-nkK"/>
+                            <constraint firstItem="5VV-7o-60T" firstAttribute="centerX" secondItem="lgV-wb-kt4" secondAttribute="centerX" id="lWf-zA-txi"/>
+                            <constraint firstItem="ip5-hl-Vsq" firstAttribute="leading" secondItem="lgV-wb-kt4" secondAttribute="leading" id="llE-bG-Slm"/>
+                            <constraint firstItem="5VV-7o-60T" firstAttribute="centerY" secondItem="lgV-wb-kt4" secondAttribute="centerY" id="reT-00-dcj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="arQ-Os-ahk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdw-XE-kuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="798"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xvw-cH-fsi">
+            <objects>
+                <viewController storyboardIdentifier="vcFive" id="tzq-T1-2cL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCF-OL-3Fy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horse" translatesAutoresizingMaskIntoConstraints="NO" id="Rls-z9-f1W">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-fa-HKT">
+                                <rect key="frame" x="0.0" y="692" width="414" height="170"/>
+                                <mutableString key="text">Ngựa (danh pháp hai phần: Equus caballus) là một loài động vật có vú trong họ Equidae, bộ Perissodactyla. Loài này được Linnaeus mô tả năm 1758.,[3] và là một trong số 8 phân loài còn sinh tồn cho tới ngày nay của họ Equidae. Ngựa đã trải qua quá trình tiến hóa từ 45 đến 55 triệu năm để từ một dạng sinh vật nhỏ với chân nhiều ngón trở thành dạng động vật lớn với chân một ngón như ngày nay.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rls-z9-f1W" firstAttribute="centerY" secondItem="RCF-OL-3Fy" secondAttribute="centerY" id="7cf-XA-iDM"/>
+                            <constraint firstItem="Rls-z9-f1W" firstAttribute="width" secondItem="RCF-OL-3Fy" secondAttribute="width" id="7gS-fq-8hM"/>
+                            <constraint firstItem="2W6-fa-HKT" firstAttribute="top" secondItem="Rls-z9-f1W" secondAttribute="bottom" constant="20" id="Hl1-OY-Uk5"/>
+                            <constraint firstItem="UUL-zY-jlW" firstAttribute="bottom" secondItem="2W6-fa-HKT" secondAttribute="bottom" id="J0L-c6-HXE"/>
+                            <constraint firstItem="Rls-z9-f1W" firstAttribute="centerX" secondItem="RCF-OL-3Fy" secondAttribute="centerX" id="Wwr-hK-bzA"/>
+                            <constraint firstItem="2W6-fa-HKT" firstAttribute="leading" secondItem="RCF-OL-3Fy" secondAttribute="leading" id="ZVN-3e-ucj"/>
+                            <constraint firstItem="2W6-fa-HKT" firstAttribute="top" secondItem="Rls-z9-f1W" secondAttribute="bottom" constant="20" id="beh-SQ-09y"/>
+                            <constraint firstItem="UUL-zY-jlW" firstAttribute="trailing" secondItem="2W6-fa-HKT" secondAttribute="trailing" id="ue1-5V-1xj"/>
+                            <constraint firstItem="Rls-z9-f1W" firstAttribute="height" secondItem="RCF-OL-3Fy" secondAttribute="height" multiplier="1/2" id="w7q-si-0Pi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UUL-zY-jlW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yl5-kK-FjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="798"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat" width="480" height="270"/>
+        <image name="chicken" width="1280" height="971"/>
+        <image name="dog" width="1920" height="702"/>
+        <image name="elephant" width="415" height="276"/>
+        <image name="horse" width="742" height="600"/>
+    </resources>
 </document>
